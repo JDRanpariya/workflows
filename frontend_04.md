@@ -29,3 +29,6 @@ Open your tailwind.css file and paste the following code.
 
 #### Now, you need to import the output.css file inside your app.js file like this.
 - import `'./assets/output.css'` And run `npm start`
+
+#### Purge Css
+- `npm i @fullhuman/postcss-purgecss`
