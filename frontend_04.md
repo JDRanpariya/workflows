@@ -13,9 +13,6 @@ Open your tailwind.css file and paste the following code.
 @tailwind utilities; 
 ```
 
-#
-- `npx tailwindcss init --full`
-
 #### create "tailwind.config.js" file and "postcss.config.js" file
 - you can just do `npx tailwindcss init -p`
 
