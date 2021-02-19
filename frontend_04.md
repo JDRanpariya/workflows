@@ -1,6 +1,35 @@
 # boilerplate for nextjs - tailwind app
 
-- `create-next-app appname`
+```
+create-next-app appname
+npm install tailwindcss autoprefixer @fullhuman/postcss-purgecss --save-dev
+npx tailwindcss init -p
+```
+
+edit tailwind.config.js with following content
+```
+  module.exports = {
+   purge: [],
+   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+    darkMode: false, // or 'media' or 'class'
+    theme: {
+      extend: {},
+    },
+    variants: {
+      extend: {},
+    },
+    plugins: [],
+  }
+```
+
+include tailwind in css under styles folder
+```
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+Finally, ensure your CSS file is being imported in your `pages/_app.js` component:
 
 
 # boilerplate for create-react-app - tailwind app
