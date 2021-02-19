@@ -23,3 +23,40 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 ``` 
 SECRET_KEY = "you secret django token" 
 ```
+
+## django-graphene setup
+- `pipenv install django-cors-headers django-graphql-jwt graphene-django psycopg2 --skip-lock` 
+- add follwing to setting.py
+```
+'graphene_django', # in installed apps
+
+GRAPHENE = {
+    'SCHEMA': 'nsfw_api.schema.schema',
+    'MIDDLEWARE': [
+        'graphql_jwt.middleware.JSONWebTokenMiddleware',
+    ],
+}  
+
+AUTHENTICATION_BACKENDS = [
+    'graphql_jwt.backends.JSONWebTokenBackend',
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://localhost:5433"
+]
+```
+
