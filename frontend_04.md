@@ -1,4 +1,9 @@
-# Create boilerplate for react-tailwind app
+# boilerplate for nextjs - tailwind app
+
+- `create-next-app appname`
+
+
+# boilerplate for create-react-app - tailwind app
 
 - `create-react-app appname`
 
