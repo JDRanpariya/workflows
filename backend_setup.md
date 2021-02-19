@@ -2,7 +2,7 @@
 
 ### general setup
 ```
-pipenv install django django-cors python-dotenv --skip-lock
+pipenv install django python-dotenv --skip-lock
 
 pipenv shell
 
