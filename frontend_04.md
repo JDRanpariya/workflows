@@ -31,7 +31,32 @@ include tailwind in css under styles folder
 ```
 Finally, ensure your CSS file is being imported in your `pages/_app.js` component:
 
+#### Working with GraphQL
+```
+npm install @apollo/client graphql
+```
+check apollo docs for setup
+v3 setup
+```
+import { ApolloClient, InMemoryCache } from '@apollo/client';
+import { ApolloProvider } from '@apollo/client';
 
+const client = new ApolloClient({
+  uri: 'https://48p1r2roz4.sse.codesandbox.io',
+  cache: new InMemoryCache()
+});
+
+function App() {
+  return (
+    <ApolloProvider client={client}>
+      <div>
+        <h2>My first Apollo app 🚀</h2>
+      </div>
+    </ApolloProvider>
+  );
+}
+```
+#
 # boilerplate for create-react-app - tailwind app
 
 - `create-react-app appname`
