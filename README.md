@@ -2,9 +2,10 @@
 My way of working
 
 # UX Workflow
-- step 1: User Research
+- step 1: User Research 
    - Understand __what__ problme you are solving and for __whom__
    - ask users accordingly in different situations
+   - [how to conduct UX Research](https://careerfoundry.com/en/blog/ux-design/how-to-conduct-user-experience-research-like-a-professional/)
 - step 2: Prototype the Solution
 - step 3: get feedback & repeat until it's done
 - step 4: hand over to design/UI
