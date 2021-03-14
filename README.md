@@ -8,7 +8,11 @@ My way of working
    - [how to conduct UX Research](https://careerfoundry.com/en/blog/ux-design/how-to-conduct-user-experience-research-like-a-professional/)
    - [how to conduct UX Survey](https://uxplanet.org/this-is-all-you-need-to-know-to-conduct-a-ux-survey-50400af45920)
    - [ultimate guide to user research](https://uxplanet.org/ultimate-guide-to-user-research-bed4a57d260)
-- step 2: Prototype the Solution
+- step 2: Prototype the Solution 
+   - Sketches
+   - Wireframes
+   - Digital Prototypes
+   - Coded Prototypes
 - step 3: get feedback & repeat until it's done
 - step 4: hand over to design/UI
 
